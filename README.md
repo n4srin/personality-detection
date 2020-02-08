@@ -11,9 +11,9 @@ This code implements the model discussed in [Deep Learning-Based Document Modeli
 
 ## Requirements
 
--   Python 2.7
--   Theano 0.7 (Tested)
--   Pandas 18.0 (Tested)
+-   Python 3.7
+-   Theano 1.0.4 (Tested)
+-   Pandas 0.25.1 (Tested)
 -   Pre-trained [GoogleNews word2vec](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit) vector
 
 
@@ -36,7 +36,7 @@ python process_data.py ./GoogleNews-vectors-negative300.bin ./essays.csv ./maire
 
 ## Training
 
-`conv_net_train.py` trains and tests the model. It requires three command-line arguments:
+`conv_net_train_gpu.py` trains and tests the model. It requires three command-line arguments (using gpu):
 
 1.  **Mode:**
     -   `-static`: word embeddings will remain fixed
@@ -54,7 +54,7 @@ python process_data.py ./GoogleNews-vectors-negative300.bin ./essays.csv ./maire
 Example:
 
 ```sh
-python conv_layer_train.py -static -word2vec 2
+python conv_net_train_gpu.py -static -word2vec 2
 ```
 
 
