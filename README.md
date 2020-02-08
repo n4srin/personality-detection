@@ -36,7 +36,7 @@ python process_data.py ./GoogleNews-vectors-negative300.bin ./essays.csv ./maire
 
 ## Training
 
-`conv_net_train_gpu.py` trains and tests the model. It requires three command-line arguments (using gpu):
+`conv_net_train.py` trains and tests the model. It requires three command-line arguments (using gpu):
 
 1.  **Mode:**
     -   `-static`: word embeddings will remain fixed
@@ -54,7 +54,7 @@ python process_data.py ./GoogleNews-vectors-negative300.bin ./essays.csv ./maire
 Example:
 
 ```sh
-python conv_net_train_gpu.py -static -word2vec 2
+python conv_net_train.py -static -word2vec 2
 ```
 
 
