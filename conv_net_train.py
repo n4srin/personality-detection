@@ -25,7 +25,7 @@ import csv
 import joblib
 
 #sys.path.append("C://Users/Owner/Documents/Python_Scripts/_personality-detection_edit")
-from conv_net_classes_gpu import LeNetConvPoolLayer, MLPDropout
+from conv_net_classes import LeNetConvPoolLayer, MLPDropout
 
 warnings.filterwarnings("ignore")
 
