@@ -54,7 +54,7 @@ python process_data.py ./GoogleNews-vectors-negative300.bin ./essays.csv ./maire
 Example:
 
 ```sh
-python conv_net_train.py -static -word2vec 2
+set THEANO_FLAGS="mode=FAST_RUN"  & set THEANO_FLAGS="device=gpu" & set THEANO_FLAGS="floatX=float64" & python conv_net_train.py conv_net_train.py -static -word2vec 2
 ```
 
 
