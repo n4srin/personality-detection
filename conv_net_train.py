@@ -462,7 +462,7 @@ if __name__ == "__main__":
     elif mode == "-static":
         print("model architecture: CNN-static")
         non_static = False
-    exec (open("conv_net_classes_gpu.py").read())
+    exec (open("conv_net_classes.py").read())
     if word_vectors == "-rand":
         print("using: random vectors")
         U = np.float64(W2)
